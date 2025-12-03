@@ -4,13 +4,14 @@ server:
 spring:
   application:
     name: human_resources_service
-  config:
-    import: optional:file:.env[.properties]
+
+
   datasource:
     driver-class-name: org.postgresql.Driver
     url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
+
   jasypt:
     encryptor:
       algorithm: PBEWithHMACSHA512AndAES_256

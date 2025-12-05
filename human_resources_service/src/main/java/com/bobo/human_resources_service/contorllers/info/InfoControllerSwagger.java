@@ -33,4 +33,25 @@ public interface InfoControllerSwagger {
     )
     @GetMapping("/java-version")
     ResponseEntity<String> getJavaVersion();
+
+    @Operation(
+            summary = "Build Version",
+            description = "Build 버전 가져오기"
+    )
+    @ApiResponses({
+            @ApiResponse(
+                    responseCode = "200",
+                    description = "HTTP Status OK"
+            ),
+            @ApiResponse(
+                    responseCode = "500",
+                    description = "HTTP Status Internal Server Error",
+                    content = @Content(
+
+                    )
+            )
+    }
+    )
+    @GetMapping("/build-version")
+    ResponseEntity<String> getBuildVersion();
 }

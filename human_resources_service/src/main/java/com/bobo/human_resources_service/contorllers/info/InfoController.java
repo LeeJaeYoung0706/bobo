@@ -37,4 +37,11 @@ public class InfoController implements InfoControllerSwagger {
                 .status(HttpStatus.NOT_FOUND)
                 .build();
     }
+
+    @Override
+    public ResponseEntity<String> getBuildVersion() {
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(buildVersion);
+    }
 }

@@ -25,3 +25,7 @@ spring:
       hibernate:
         format_sql: true
         jdbc.lob.non_contextual_creation: true
+
+
+build:
+  version: "1.0"

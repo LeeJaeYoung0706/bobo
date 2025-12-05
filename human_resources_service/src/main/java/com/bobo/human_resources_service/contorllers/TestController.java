@@ -1,4 +1,4 @@
-package com.bobo.human_resources_service.contorller;
+package com.bobo.human_resources_service.contorllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
